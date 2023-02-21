@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { reset } from "../features/auth/authSlice";
 import {
   FaInstagram,
@@ -40,12 +40,12 @@ const HomePage = () => {
               experience.Let's create memorable meals together in the kitchen.
             </p>
             <div className="flex justify-start gap-x-5">
-              <a href="/signup" className="btn">
+              <Link to="/signup" className="btn">
                 SIGNUP
-              </a>
-              <a href="/login" className="btn">
+              </Link>
+              <Link to="/login" className="btn">
                 LOGIN
-              </a>
+              </Link>
             </div>
             <div className="flex justify-start mt-10 ml-1 gap-x-8">
               <div className="card">
