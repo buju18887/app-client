@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: Nunito;
+  }
+}
+
+.card{
+  @apply rounded-lg bg-white border-gray-400 shadow-md overflow-hidden relative transform hover:scale-110 transition ease-out duration-300;
+}
+
+.badge{
+  @apply absolute top-0 ml-2 p-2 mt-2 bg-yellow-200 text-secondary-200 text-xs uppercase font-bold rounded-full flex items-center gap-1;
+}
+
+.list{
+  @apply  p-3 hover:bg-secondary-100 rounded-l-xl transform hover:scale-105 transition ease-in duration-200;
+}
+
+.active{
+  @apply  p-3 bg-secondary-100 rounded-l-xl transform scale-105 transition ease-in duration-200;
+}
+
+.anchor{
+  @apply flex justify-end text-sm items-center gap-2 font-extrabold;
+}
+
+.input{
+  @apply block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-400 focus:ring focus:ring-yellow-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500;
+}
+
+.textarea{
+  @apply block rounded-md border-yellow-300 shadow-sm focus:border-yellow-300 focus:ring focus:ring-yellow-200 focus:ring-opacity-50 disabled:cursor-not-allowed disabled:bg-gray-50 disabled:text-gray-500;
+}
+
+.label{
+  @apply mb-1 block text-base font-medium text-gray-700 after:text-red-500 after:content-['*'];
+}
+
+.button{
+  @apply rounded-lg border border-yellow-500 bg-yellow-500 px-5 py-2.5 text-center text-sm font-medium text-white shadow-sm transition-all hover:border-yellow-700 hover:bg-yellow-700 focus:ring focus:ring-yellow-200 disabled:cursor-not-allowed disabled:border-yellow-300 disabled:bg-yellow-300
+}
+
+.btn{
+  @apply rounded-full py-2 px-3 uppercase text-xs font-extrabold tracking-wider cursor-pointer text-yellow-600 border-yellow-600 md:border-2 hover:bg-yellow-600 hover:text-white transition ease-out duration-500;
+}
+
+.danger{
+  @apply mt-1 text-sm text-red-500;
+}
