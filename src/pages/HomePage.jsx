@@ -65,7 +65,7 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-        <div className=" absolute w-1/2 right-0">
+        <div className=" absolute w-1/2 right-0 h-full">
           <img src="/homepageimg.png" alt="" />
           <div className="absolute top-0 right-0 text-secondary-100 flex justify-end text-2xl mt-5 mr-5 p-4 gap-x-5">
             <FaTwitter />
